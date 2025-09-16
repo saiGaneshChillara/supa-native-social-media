@@ -35,7 +35,7 @@ const Login = () => {
         {/* form */}
         <View style={styles.form}>
           <Text style={{ fontSize: hp(1.5), color: theme.colors.text }}>
-            Please Login to Continue
+            Please login to continue.
           </Text>
           <Input 
             icon={<Icon name={"mail"} size={26} strokeWidth={1.6} />}
@@ -57,7 +57,7 @@ const Login = () => {
         {/* footer */}
         <View style={styles.footer}>
           <Text style={styles.footerText}>Don&apos;t have an account?</Text>
-          <Pressable>
+          <Pressable onPress={() => router.push("signup")}>
             <Text style={[styles.footerText, { color: theme.colors.primaryDark, fontWeight: theme.fonts.semibold }]}>Sign Up</Text>
           </Pressable>
         </View>
