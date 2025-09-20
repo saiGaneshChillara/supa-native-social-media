@@ -35,7 +35,7 @@ const Login = () => {
 
     setLoading(false);
 
-    console.log("error", error);
+    // console.log("error", error);
 
     if (error) {
       Alert.alert("Login", error.message);
