@@ -16,12 +16,12 @@ const Home = () => {
 
   console.log("User:", user);
 
-  const logout = async () => {
-    const { error } = await supabase.auth.signOut();
-    if (error) {
-      Alert.alert("Logout", error.message);
-    }
-  };
+  // const logout = async () => {
+  //   const { error } = await supabase.auth.signOut();
+  //   if (error) {
+  //     Alert.alert("Logout", error.message);
+  //   }
+  // };
   return (
     <ScreenWrapper bg="white">
       <View style={styles.container}>
@@ -46,7 +46,7 @@ const Home = () => {
           </View>
         </View>
       </View>
-      <Button title='Logout' onPress={logout} />
+      {/* <Button title='Logout' onPress={logout} /> */}
     </ScreenWrapper>
   );
 };
